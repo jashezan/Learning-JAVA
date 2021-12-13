@@ -138,51 +138,51 @@ Casting in java is the assigning values of one type to another (Primitive data t
 
 #### Operators
  There are 4 types of operators in Java
-        * Arithmetic operators are just like operators we used in Math: (+, -, *, /, %)
-        * Assignment Operators: (=, +=, -=, *=, /=, %=)
-        * Comparison/Relational Operators: (==, !=, >, <, >=, <= )
-        * Logical Operators: (&&, ||, !)
-        * extra Unary Operator: (++, --)
-         */
+* Arithmetic operators are just like operators we used in Math: (+, -, *, /, %)
+* Assignment Operators: (=, +=, -=, *=, /=, %=)
+* Comparison/Relational Operators: (==, !=, >, <, >=, <= )
+* Logical Operators: (&&, ||, !)
+* extra Unary Operator: (++, --)
+
 
 #### Input in JAVA
 Taking input from user through terminal using "Scanner class"
 Scanner class (import.util.Scanner) should be imported to use the class.
-we use ( System.in ) for taking input in an object
+we use ( ```System.in``` ) for taking input in an object
 String line = sc.nextLine(); // for taking full sentence else next(); will take only single word
 
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Input your age : ");
-        int aged = sc.nextInt();
-        System.out.println("\n\n\nAge : " + aged);
+            Scanner sc = new Scanner(System.in);
+            System.out.print("Input your age : ");
+            int aged = sc.nextInt();
+            System.out.println("\n\n\nAge : " + aged);
 
  #### Conditional statements ‘if-else’
 
  The if block is used to specify the code to be executed if the condition specified  in if is true, the else block is executed otherwise.
 
-        if(aged<10){
-            System.out.println("You're kid");
-        }else if(aged<18){
-            System.out.println("You're teenager");
-        }else{
-            System.out.println("You're adult");
-        }
+            if(aged<10){
+                System.out.println("You're kid");
+            }else if(aged<18){
+                System.out.println("You're teenager");
+            }else{
+                System.out.println("You're adult");
+            }
 
 #### Conditional Statements ‘switch
 
 Switch case statements are a substitute for long if statements that compare a variable to multiple values. After a match is found, it executes the corresponding code of that value case.
 
-        switch (aged) {
-            case 1 -> System.out.println("Yo 1");
-            case 2 -> System.out.println("Yo 2");
-            case 3 -> System.out.println("Yo 3");
-            case 4 -> System.out.println("Yo 4");
-            case 5 -> System.out.println("Yo 5");
-            default -> System.out.println("Yo default");
-        }
+            switch (aged) {
+                case 1 -> System.out.println("Yo 1");
+                case 2 -> System.out.println("Yo 2");
+                case 3 -> System.out.println("Yo 3");
+                case 4 -> System.out.println("Yo 4");
+                case 5 -> System.out.println("Yo 5");
+                default -> System.out.println("Yo default");
+            }
 
 #### Loops
-* Loops in JAVA is same as C/C++
+***Loops in JAVA is same as C/C++***
 
 ##### For Loop
 The syntax of the for loop is  :
@@ -205,13 +205,13 @@ The syntax for the do-while loop is :
             while (condition);
 
 #### Break & Continue
+***Break and Continue is also same as C/C++***
+
 Jumps in loops are used to control the flow of loops. There are two statements  used to implement jump in loops - Continue and Break. These statements are  used when we need to change the flow of the loop when some specified  condition is met.
 ##### Continue statement
 is used to skip to the next iteration of that loop. This  means that it stops one iteration of the loop. All the statements present  after the continue statement in that loop are not executed.
 
-            int i;
-            for (i=1; i<=20; i++) {
-            
+            for (int i=1; i<=20; ){
                if (i%3==0) {
                    continue;
                }
@@ -223,9 +223,7 @@ In this for loop, whenever i is a number divisible by 3, it will not be printed 
 ##### Break statement
 is used to terminate the current loop. As soon as the break  statement is encountered in a loop, all further iterations of the loop are  stopped and control is shifted to the first statement after the end of loop.
 
-            int i;
-            for (i=1; i<=20; i++) {
-            
+            for (int i=1; i<=20; i++) {
                if (i == 11) {
                    break;
                }
@@ -234,17 +232,15 @@ is used to terminate the current loop. As soon as the break  statement is encoun
 
 In this loop, when i becomes equal to 11, the for loop terminates due to  break statement, Hence, the program will print numbers from 1 to 10  only.
 
-Break and Continue is also same as C/C++
-
-        // Exception Handling with try and catch
-        try{
-            System.out.println(marks[5]);
-        }catch(Exception exception){
-            // do something
-        }
-
 #### Exception Handling (try-catch)
 Exception Handling in Java is a mechanism to handle the runtime errors so that normal flow of the application can be maintained.
+
+            Exception Handling with try and catch
+            try{
+                System.out.println(marks[5]);
+            }catch(Exception exception){
+                // do something
+            }
 
 It is done using 2 keywords - ‘try’ and ‘catch’.
 Additional keywords like finally, throw and throws can also be used if we dive deep into this concept.
@@ -265,7 +261,7 @@ A function is a block of code that performs a specific task.
 * Functions make maintenance of code easy as we have to change at one  place if we make future changes to the functionality. 
 * Functions make the code more readable and easy to understand. 
 
-The syntax for function declaration is :
+**The syntax for function declaration is :**
 
             return-type function_name (parameter 1, parameterϮ …… parameter n){  //function_body 
             } 
@@ -290,6 +286,7 @@ The main function is a special function as the computer starts running the code 
 
 
 # Learning Sources
+*All this notes are mainly gained from Apna College*
 
 [Java Tutorial for Beginners | Learn Java in 2 Hours | Apna College](https://www.youtube.com/watch?v=UmnCZ7-9yDY)
 * [Notes from this class](https://docs.google.com/document/d/1oH3njzRKmyC_igBsCp4b2E3s7GrJdGfIilPAahDV5W8/edit)
