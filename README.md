@@ -1,7 +1,7 @@
 # java-notes-including-oops
 This is JAVA notes for beginners including object-oriented programming learned from various videos, other's notes, books and other sources. Summary of those learning will be here for revision and to expertise my learning
 
-
+----------------------
 ### Primitive data type
 
 
@@ -27,13 +27,14 @@ This is JAVA notes for beginners including object-oriented programming learned f
 * It also use "new" to create object of a class
 * If non-primitive data type is not initialized then "new" keyword must be added
 
-
+-------------
 ***System.out.println(); prints with a new line
 System.out.print(); prints without a new line***
 
 **All class name starts with Capital letter in JAVA by convention**
 **Also all method/function name starts with small letter in JAVA by convention**
 
+--------------
 #### String
 * if we use "String" keyword to create string then name[0] can't be used to get individual character
 * we have to use name.charAt(position-serial);
@@ -65,7 +66,7 @@ System.out.print(); prints without a new line***
 
 
 
-
+----------------------------------------------
 #### Array
 * Array is also non-primitive data type so "new" keyword should be usedsquare brackets "[]" should be put after data type
  * Array is homogeneous(same data type) simple data structure
@@ -98,8 +99,11 @@ Till now only 1D (single dimension) array was being used,
 Now it's time to jump into 2D arrays with 2 square brackets
 
     int [][] fmakrs = {{89, 78, 90}, {97, 85, 99}}; 
+    
 *"new" keyword is not being used*
 
+-------------------------------------------------
+#### Casting
 Casting in java is the assigning values of one type to another (Primitive data type)
 * **Implicit casting / casting down / widening type casting**
     This casting is done by java generally on its own. It is assigning smaller values to larger data types.
@@ -125,7 +129,7 @@ Casting in java is the assigning values of one type to another (Primitive data t
 * *The types being considered here are compatible*
 
 
-
+----------------------------------------
 
 #### Constant
 * A variable in Java which has a fixed value, so it cannot be assigned again.
@@ -136,6 +140,8 @@ Casting in java is the assigning values of one type to another (Primitive data t
         PI = 3.1416F; can't be assigned with the same value also
         System.out.println(PI);
 
+---------------------------------------------
+
 #### Operators
  There are 4 types of operators in Java
 * Arithmetic operators are just like operators we used in Math: (+, -, *, /, %)
@@ -144,6 +150,7 @@ Casting in java is the assigning values of one type to another (Primitive data t
 * Logical Operators: (&&, ||, !)
 * extra Unary Operator: (++, --)
 
+----------------------------------
 
 #### Input in JAVA
 Taking input from user through terminal using "Scanner class"
@@ -155,6 +162,8 @@ String line = sc.nextLine(); // for taking full sentence else next(); will take 
             System.out.print("Input your age : ");
             int aged = sc.nextInt();
             System.out.println("\n\n\nAge : " + aged);
+            
+----------------------------------------------------
 
  #### Conditional statements ‘if-else’
 
@@ -180,6 +189,8 @@ Switch case statements are a substitute for long if statements that compare a va
                 case 5 -> System.out.println("Yo 5");
                 default -> System.out.println("Yo default");
             }
+
+----------------------------------------------
 
 #### Loops
 ***Loops in JAVA is same as C/C++***
@@ -232,6 +243,8 @@ is used to terminate the current loop. As soon as the break  statement is encoun
 
 In this loop, when i becomes equal to 11, the for loop terminates due to  break statement, Hence, the program will print numbers from 1 to 10  only.
 
+--------------------------------
+
 #### Exception Handling (try-catch)
 Exception Handling in Java is a mechanism to handle the runtime errors so that normal flow of the application can be maintained.
 
@@ -254,6 +267,9 @@ Additional keywords like finally, throw and throws can also be used if we dive d
             
             System.out.println("We tried to print marks & an exception must have occurred with index >=3");
         
+        
+-----------------------------------------------
+
 #### Methods/Functions
 A function is a block of code that performs a specific task. 
 **Why are functions used?**
@@ -283,7 +299,7 @@ int add (int num1, int num2)
 **main function**
 The main function is a special function as the computer starts running the code  from the beginning of the main function. Main function serves as the entry  point for the program.
 
-
+-----------------------------
 
 # Learning Sources
 *All this notes are mainly gained from Apna College*
