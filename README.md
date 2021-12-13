@@ -1,5 +1,5 @@
-# java-notes-including-oops
-This is JAVA notes for beginners including object-oriented programming learned from various videos, other's notes, books and other sources. Summary of those learning will be here for revision and to expertise my learning
+# JAVA basics note for beginner
+This is JAVA notes for beginners including object-oriented programming learned from various videos, other's notes, books and other sources. Summary of those learning will be here for revision and to expertise my learning.Those who know C/C++ will get it better.
 
 ----------------------
 ### Primitive data type
@@ -75,11 +75,11 @@ This is JAVA notes for beginners including object-oriented programming learned f
  limits should be given in the declaring time 
  * Array in JAVA is initialized with ( 0/ NULL/ false ) Unlike C/C++
 ```Java    
-        int [] marks = new int[3];
-        marks[0] = 90;
-        marks[1] = 88;
-        marks[2] = 95;
-        System.out.println(marks[0]);
+            int [] marks = new int[3];
+            marks[0] = 90;
+            marks[1] = 88;
+            marks[2] = 95;
+            System.out.println(marks[0]);
 ```
         
  ##### Array have properties Unlike String data type,
@@ -91,17 +91,19 @@ This is JAVA notes for beginners including object-oriented programming learned f
 
 
 ```Java    
-// sort
-        System.out.println("Before sort : " + marks[0]);
-// function from class will overwrite the applied array
-        Arrays.sort(marks);
-        System.out.println("After sort : " + marks[0]);
+    // sort
+            System.out.println("Before sort : " + marks[0]);
+    // function from class will overwrite the applied array
+            Arrays.sort(marks);
+            System.out.println("After sort : " + marks[0]);
 ```
 Till now only 1D (single dimension) array was being used,
 Now it's time to jump into 2D arrays with 2 square brackets
 
+```JAVA
     int [][] fmakrs = {{89, 78, 90}, {97, 85, 99}}; 
-    
+```
+
 *"new" keyword is not being used*
 
 -------------------------------------------------
@@ -112,9 +114,11 @@ Casting in java is the assigning values of one type to another (Primitive data t
     *like transferring glass's water to bucket (int to double)*
     **byte -> short -> char -> int -> long -> float -> double**
 
-        double price = 100.00;
-        price += 18; // implicit casting
-        System.out.println(price); // 118.00
+```JAVA
+            double price = 100.00;
+            price += 18; // implicit casting
+            System.out.println(price); // 118.00
+```
 
 * **Explicit casting / casting up / narrowing type casting**
     This casting is done with . It is assigning larger values to smaller data types.
@@ -122,12 +126,14 @@ Casting in java is the assigning values of one type to another (Primitive data t
     *like transferring bucket's water to glass forcefully (double to int)*
     **double -> float -> long -> int -> char -> short -> byte**
 
-        int p = 100;
-        p = 100 + 18.00; //does not works
-        p = 100 + (int)18.00; // explicit casting
-        p += 18.00; // works
-        System.out.println(p); // 118
-    
+```JAVA
+            int p = 100;
+            p = 100 + 18.00; //does not works
+            p = 100 + (int)18.00; // explicit casting
+            p += 18.00; // works
+            System.out.println(p); // 118
+ ```
+ 
 * *The types being considered here are compatible*
 
 
@@ -138,9 +144,11 @@ Casting in java is the assigning values of one type to another (Primitive data t
  * it must be initialized with "final" keyword
  * it should be written in CAPITAL letter by convention
 
-        final float PI = 3.1416F;
-        PI = 3.1416F; can't be assigned with the same value also
-        System.out.println(PI);
+```JAVA
+            final float PI = 3.1416F;
+            PI = 3.1416F; can't be assigned with the same value also
+            System.out.println(PI);
+```
 
 ---------------------------------------------
 
@@ -160,17 +168,20 @@ Scanner class (import.util.Scanner) should be imported to use the class.
 we use ( ```System.in``` ) for taking input in an object
 String line = sc.nextLine(); // for taking full sentence else next(); will take only single word
 
+```JAVA
             Scanner sc = new Scanner(System.in);
             System.out.print("Input your age : ");
             int aged = sc.nextInt();
             System.out.println("\n\n\nAge : " + aged);
-            
+```
+
 ----------------------------------------------------
 
  #### Conditional statements ‘if-else’
 
  The if block is used to specify the code to be executed if the condition specified  in if is true, the else block is executed otherwise.
 
+```JAVA
             if(aged<10){
                 System.out.println("You're kid");
             }else if(aged<18){
@@ -178,11 +189,13 @@ String line = sc.nextLine(); // for taking full sentence else next(); will take 
             }else{
                 System.out.println("You're adult");
             }
+```
 
 #### Conditional Statements ‘switch
 
 Switch case statements are a substitute for long if statements that compare a variable to multiple values. After a match is found, it executes the corresponding code of that value case.
 
+```JAVA
             switch (aged) {
                 case 1 -> System.out.println("Yo 1");
                 case 2 -> System.out.println("Yo 2");
@@ -191,6 +204,7 @@ Switch case statements are a substitute for long if statements that compare a va
                 case 5 -> System.out.println("Yo 5");
                 default -> System.out.println("Yo default");
             }
+```
 
 ----------------------------------------------
 
@@ -200,22 +214,30 @@ Switch case statements are a substitute for long if statements that compare a va
 ##### For Loop
 The syntax of the for loop is  :
 
+```JAVA
             for (initialization; condition; update) { 
              // body of-loop 
             }
+```
+
 ##### While Loop
 The syntax for while loop is :
 
+```JAVA
             while(condition) { 
              // body of the loop 
             }
+```
+
 ##### Do-While Loop
 The syntax for the do-while loop is :
 
+```JAVA
             do { 
              // body of loop; 
             } 
             while (condition);
+```
 
 #### Break & Continue
 ***Break and Continue is also same as C/C++***
@@ -224,24 +246,28 @@ Jumps in loops are used to control the flow of loops. There are two statements  
 ##### Continue statement
 is used to skip to the next iteration of that loop. This  means that it stops one iteration of the loop. All the statements present  after the continue statement in that loop are not executed.
 
+```JAVA
             for (int i=1; i<=20; ){
                if (i%3==0) {
                    continue;
                }
                System.out.println(i);
             }
+```
 
 In this for loop, whenever i is a number divisible by 3, it will not be printed  as the loop will skip to the next iteration due to the continue statement.  Hence, all the numbers except those which are divisible by 3 will be printed.
 
 ##### Break statement
 is used to terminate the current loop. As soon as the break  statement is encountered in a loop, all further iterations of the loop are  stopped and control is shifted to the first statement after the end of loop.
 
+```JAVA
             for (int i=1; i<=20; i++) {
                if (i == 11) {
                    break;
                }
                System.out.println(i);
             }
+```
 
 In this loop, when i becomes equal to 11, the for loop terminates due to  break statement, Hence, the program will print numbers from 1 to 10  only.
 
@@ -249,17 +275,22 @@ In this loop, when i becomes equal to 11, the for loop terminates due to  break 
 
 #### Exception Handling (try-catch)
 Exception Handling in Java is a mechanism to handle the runtime errors so that normal flow of the application can be maintained.
+* The try statement allows you to define a block of code to be tested for errors while it is being executed.
+* The catch statement allows you to define a block of code to be executed, if an error occurs in the try block.
 
+```JAVA
             Exception Handling with try and catch
             try{
                 System.out.println(marks[5]);
             }catch(Exception exception){
                 // do something
             }
+```
 
-It is done using 2 keywords - ‘try’ and ‘catch’.
+The try and catch keywords come in pairs.
 Additional keywords like finally, throw and throws can also be used if we dive deep into this concept.
 
+```JAVA
             int[] marks = {98, 97, 95};
             try {
                System.out.println(marks[4]);
@@ -268,7 +299,7 @@ Additional keywords like finally, throw and throws can also be used if we dive d
             }
             
             System.out.println("We tried to print marks & an exception must have occurred with index >=3");
-        
+```
         
 -----------------------------------------------
 
@@ -281,9 +312,11 @@ A function is a block of code that performs a specific task.
 
 **The syntax for function declaration is :**
 
+```JAVA
             return-type function_name (parameter 1, parameterϮ …… parameter n){  //function_body 
             } 
             return-type  
+```
 
 *The return type of a function is the data type of the variable that that function  returns.*  
 
@@ -302,7 +335,11 @@ int add (int num1, int num2)
 The main function is a special function as the computer starts running the code  from the beginning of the main function. Main function serves as the entry  point for the program.
 
 -----------------------------
+# Other Important Notes
+[Bangla Notes](https://devsonket.com/java-cheat-sheet)
+[Java & Related Concepts - Suryakant Bharti](https://github.com/Suryakant-Bharti/Important-Java-Concepts)
 
+------------------------------
 # Learning Sources
 *All this notes are mainly gained from Apna College*
 
@@ -311,3 +348,5 @@ The main function is a special function as the computer starts running the code 
 
 [Java OOPs in One Shot | Object Oriented Programming | Java Language | Placement Course | Apna College](https://youtu.be/bSrm9RXwBaI)
 * [Notes from this class](https://docs.google.com/document/d/1uv9EdLaG9TK7iNcMneLeEaChzvmXU9Xu_Uv5iZwswFk/edit)
+
+[Java Tutorial - w3school](https://www.w3schools.com/java/default.asp)
