@@ -333,14 +333,18 @@ int add (int num1, int num2)
 
 **main function**
 The main function is a special function as the computer starts running the code  from the beginning of the main function. Main function serves as the entry  point for the program.
+
+
 -----------------------------
 
-[Java OOPS](https://github.com/jashezan/java-oops#readme)
+
+* [Java OOPS](https://github.com/jashezan/java-oops#readme)
+
 
 -----------------------------
 # Other Important Notes
-[Bangla Notes](https://devsonket.com/java-cheat-sheet)
-[Java & Related Concepts - Suryakant Bharti](https://github.com/Suryakant-Bharti/Important-Java-Concepts)
+* [Bangla Notes](https://devsonket.com/java-cheat-sheet)
+* [Java & Related Concepts - Suryakant Bharti](https://github.com/Suryakant-Bharti/Important-Java-Concepts)
 
 ------------------------------
 # Learning Sources
