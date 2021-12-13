@@ -28,9 +28,9 @@ This is JAVA notes for beginners including object-oriented programming learned f
 * If non-primitive data type is not initialized then "new" keyword must be added
 
 -------------
-***System.out.println(); prints with a new line
+**System.out.println(); prints with a new line**
 
-System.out.print(); prints without a new line***
+**System.out.print(); prints without a new line**
 
 **All class name starts with Capital letter in JAVA by convention**
 
