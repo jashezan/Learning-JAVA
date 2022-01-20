@@ -32,9 +32,11 @@ This is JAVA notes for beginners including object-oriented programming learned f
 
 **System.out.print(); prints without a new line**
 
-**All class name starts with Capital letter in JAVA by convention**
+--------------
 
-**Also all method/function name starts with small letter in JAVA by convention**
+### JAVA Naming Convention
+
+![java naming convention](https://codebridgeplus.com/wp-content/uploads/capture15.png)
 
 --------------
 #### String
