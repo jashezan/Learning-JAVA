@@ -340,7 +340,7 @@ The main function is a special function as the computer starts running the code 
 -----------------------------
 
 
-* [Java OOPS](https://github.com/jashezan/java-oops#readme)
+* [Java OOPS](https://github.com/jashezan/learning-java/blob/main/Java_OOPS.md)
 
 
 -----------------------------
