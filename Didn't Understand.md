@@ -1,4 +1,4 @@
-### These are the topics that i didn't understand / Understand but Need details
+### These are the topics that i didn't understand / Understood but Need details
 - [ ] 01. Byte conversion diagram.
 - [ ] 02. What does "exit code 0" mean.
 - [ ] 03. Multi-line comment v/s documentation comment.
