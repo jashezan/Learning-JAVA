@@ -2,6 +2,7 @@
 This is JAVA notes for beginners including object-oriented programming learned from various videos, other's notes, books and other sources. Summary of those learning will be here for revision and to expertise my learning.Those who know C/C++ will get it better.
 
 ----------------------
+
 ### Primitive data type
 
 
@@ -348,11 +349,13 @@ The main function is a special function as the computer starts running the code 
 
 
 -----------------------------
+
 # Other Important Notes
 * [Bangla Notes](https://devsonket.com/java-cheat-sheet)
 * [Java & Related Concepts - Suryakant Bharti](https://github.com/Suryakant-Bharti/Important-Java-Concepts)
 
 ------------------------------
+
 # Learning Sources
 *All this notes are mainly gained from Apna College*
 
