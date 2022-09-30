@@ -16,6 +16,7 @@ public class Hello {
          * double - 8
          * boolean - 1
           */
+        
         int dob = 2000;
         byte age = 20;
         long phone = 8801623766425L;
@@ -31,6 +32,7 @@ public class Hello {
          also use "new" to create object of a class
          * if non-primitive data type is not initialized then "new" keyword must be added
          */
+        
         // System.out.println(); prints with a new line
         // System.out.print(); prints without a new line
         String name = "Harry";
@@ -42,6 +44,7 @@ public class Hello {
 //        System.out.println(name1);
 //        System.out.println(name1.length());
 //        System.out.println(name1.charAt(0));
+        
         /* if we use "String" keyword to create string
         then name[0] can't be used to get individual character
         we have to use name.charAt(position-serial);
@@ -50,6 +53,7 @@ public class Hello {
         name.replace does not change the main string
         it save the changed data in a new variable
         */
+        
         // String can't be changed directly - because string is immutable in JAVA
         String name2 = name.replace("Harry","Shezan");
 //        System.out.println("This is name2 : " + name2);
