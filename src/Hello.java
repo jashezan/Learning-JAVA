@@ -17,6 +17,7 @@ public class Hello {
          * boolean - 1
           */
         
+        
         int dob = 2000;
         byte age = 20;
         long phone = 8801623766425L;
