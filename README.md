@@ -28,6 +28,7 @@ This is JAVA notes for beginners including object-oriented programming learned f
 * If non-primitive data type is not initialized then "new" keyword must be added
 
 -------------
+
 **System.out.println(); prints with a new line**
 
 **System.out.print(); prints without a new line**
@@ -39,6 +40,7 @@ This is JAVA notes for beginners including object-oriented programming learned f
 ![java naming convention](https://codebridgeplus.com/wp-content/uploads/capture15.png)
 
 --------------
+
 #### String
 * if we use "String" keyword to create string then name[0] can't be used to get individual character
 * we have to use name.charAt(position-serial);
@@ -71,6 +73,7 @@ This is JAVA notes for beginners including object-oriented programming learned f
 
 
 ----------------------------------------------
+
 #### Array
 * Array is also non-primitive data type so "new" keyword should be usedsquare brackets "[]" should be put after data type
  * Array is homogeneous(same data type) simple data structure
@@ -109,6 +112,7 @@ Now it's time to jump into 2D arrays with 2 square brackets
 *"new" keyword is not being used*
 
 -------------------------------------------------
+
 #### Casting
 Casting in java is the assigning values of one type to another (Primitive data type)
 * **Implicit casting / casting down / widening type casting**
